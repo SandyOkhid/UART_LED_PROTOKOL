@@ -10,13 +10,11 @@ src: Mapp som innehåller källkoden för projektet.. main.c: Huvudprogrammet so
 Användning: För att använda projektet behöver du en STM32-mikrokontrollerplattform med stöd för UART-kommunikation och LED-lampor. Du kan ladda upp koden till mikrokontrollern och ansluta LED-lamporna till de utgångar som specificerats i LED-drivrutinen.
 
 Begränsningar: Detta projekt är avsett att visa grundläggande funktionalitet för att styra LED-lampor med hjälp av UART-kommunikation på en STM32-mikrokontrollerplattform. Det är inte optimerat för prestanda eller energieffektivitet och bör inte användas i produktionssystem utan nödvändiga förbättringar och anpassningar.
+UART står för Universal Asynchronous Receiver/Transmitter och är en typ av serieport som används för att skicka och ta emot data mellan enheter. UART är vanligtvis en del av mikrokontrollrar eller andra elektroniska enheter och används ofta för kommunikation mellan en dator och en annan enhet.
 
-Anslut UART- och LCD-enheterna till mikrokontrollern: Anslut UART-sändningsstiftet (TX) till LCD-mottagningsstiftet och UART-mottagningsstiftet (RX) till LCD-sändningsstiftet. Anslut jordstiften (GND) på båda enheterna.
+Viktiga förklaringar:
+LED står för Light Emitting Diode, vilket är en halvledare som kan omvandla elektrisk energi till ljus. LED används ofta som en ljuskälla i elektroniska enheter.
 
-Usage:
-    Ställ in UART och LCD: Ställ in UART baudhastighet, databitar och stoppbitar. Ställ in LCD-kolumnerna och -raderna och eventuella andra inställningar efter behov.
+Att kombinera LED med UART kan vara användbart i olika applikationer, till exempel för att skicka data till en enhet som styr en LED-belysning. Till exempel kan en mikrokontroller använda UART för att ta emot data från en dator och sedan styra en LED-belysning baserat på den mottagna datan.
 
-    Skriv kod för att styra UART och LCD: Skriv kod för att skicka data till UART och visa den på LCD:n. Detta kan innebära att konfigurera UART och skicka kommandon till LCD-skärmen.
-
-    Ladda upp koden till mikrokontrollern: Kompilera koden och ladda upp den till mikrokontrollern.
-
+Det finns också speciella LED-moduler som har inbyggda UART-kretsar för att enklare styra LED-belysningen. Dessa moduler kan vara användbara för applikationer som kräver avancerade ljuseffekter eller för att styra flera LED-lampor samtidigt.
